@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Оно тебе надо" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
@@ -11,28 +12,39 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__menu">
-        <a href="#" class="menu-main">Главная</a>
-        <a href="#" class="menu-lots">посмотреть лоты</a>
-        <a href="#" class="menu-auction">об аукционе</a>
-      </nav>
-      <div class="header__logo">
-        <a class="vector">
-          <img
-            class="header__logo-image"
-            src="./images/logo-black.svg"
-            alt="Логотип проекта"
-          />
-        </a>
-      </div>
-      <div class="header__contacts">
-        <div>+9 999 555 5555</div>
-        <div>info@sobaka.ge</div>
-        <div>наб. Принсенграхт 263- 265, Амстердам</div>
-      </div>
+      <ul class="header__menu-list">
+        <li class="header__menu-item header__menu-item_active">
+          <a class="header__menu-link">главная</a>
+        </li>
+        <li class="header__menu-item header__menu-item_lots">
+          <a href="#" class="header__menu-link">посмотреть лоты</a>
+        </li>
+        <li class="header__menu-item header__menu-item_auction">
+          <a href="#" class="header__menu-link">об аукционе</a>
+        </li>
+      </ul>
+
+      <a class="header__logo">
+        <img
+          class="header__logo-image"
+          src="./images/logo-black.svg"
+          alt="Логотип проекта"
+        />
+      </a>
+
+      <address class="header__address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <span class="header__address-adds">наб. Принсенграхт 263- 265, Амстердам</span>
+      </address>
     </header>
 
-    <main></main>
+    <main>
+      <section class="cover"></section>
+      <section class="cots"></section>
+      <section class="about"></section>
+    </main>
+
     <footer class="footer"></footer>
   </body>
 </html>
