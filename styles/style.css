@@ -1,3 +1,5 @@
+/* header */
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -51,7 +53,7 @@
 }
 
 .header__address {
-  line-height: 27px;
+  line-height: 26px;
   text-underline-position: under;
   font-style: normal;
   display: flex;
@@ -59,6 +61,7 @@
   justify-content: start;
   padding-left: 192px;
   padding-top: 0;
+  letter-spacing: 0.1px;
 }
 
 .header__address-adds {
