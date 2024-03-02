@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 91px 50px 86px;
   font-size: 18px;
 }
@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: row;
   list-style-type: circle;
-  gap: 31px;
+  gap: 33px;
   padding-top: 2px;
 }
 
@@ -25,12 +25,13 @@
 
 .header__menu-item {
   text-decoration: underline;
+  overflow-wrap: break-word;
 }
 
 .header__menu-item_active {
   text-decoration: none;
   list-style: none;
-  width: 64px;
+  max-width: 67px;
 }
 
 .header__menu-link {
@@ -38,13 +39,12 @@
 }
 
 .header__menu-item_lots {
-  width: 151px;
-  margin-left: 5px;
+  max-width: 151px;
   margin-bottom: 5px;
 }
 
 .header__menu-item_auction {
-  width: 130px;
+  max-width: 130px;
 }
 
 .header_logo-image {
@@ -52,22 +52,23 @@
   width: 100%;
 }
 
-.header__address {
+.address {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-self: end;
   text-underline-position: under;
   font-style: normal;
-  line-height: 25px;
-  padding-left: 192px;
-  padding-top: 0;
+  max-width: 240px;
+  max-height: 100px;
+}
+
+.header__address {
+  line-height: 24px;
   letter-spacing: 0.1px;
 }
 
-.header__address-adds {
-  line-height: 23px;
-  padding: 0px;
-  height: 54px;
+.address-text {
+  line-height: 25px;
 }
 
 /* COVER */
@@ -75,6 +76,7 @@
 .cover {
   position: relative;
   background: url(../images/cover.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .cover__wrapper {
@@ -96,7 +98,7 @@
   font-weight: 700;
   line-height: calc(100 / 100 * 100%);
   letter-spacing: 0.3em;
-  row-gap: 25px;
+  row-gap: 28px;
 }
 
 .cover__description {
@@ -122,7 +124,7 @@
 }
 
 .bet-button {
-  border: 1px solid white;
+  border: 1px solid currentColor;
   padding: 12px 32px 11px 31px;
   font-size: 22px;
   font-weight: 500;
@@ -131,6 +133,7 @@
   text-transform: uppercase;
   color: white;
   background-color: transparent;
+  font-family: inherit;
 }
 
 .aligned-text {
@@ -139,12 +142,13 @@
 
 .aligned-text_center {
   margin: 0 auto;
-  padding-right: 58px;
+  padding-right: 59px;
 }
 
 .aligned-text_right {
   margin-left: auto;
-  padding-bottom: 6px;
+  padding-bottom: 17px;
+  line-height: 84px;
 }
 
 .letter-spacing-extended {
@@ -289,21 +293,8 @@
 }
 
 .footer__address {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  text-underline-position: under;
-  font-style: normal;
-  line-height: 25px;
-  font-size: 18px;
-  letter-spacing: 0.1px;
-  width: 242px;
-}
-
-.footer__address-adds {
-  line-height: 23px;
-  padding: 0px;
-  height: 54px;
+  line-height: 24px;
+  letter-spacing: 1px;
 }
 
 .footer__menu {
